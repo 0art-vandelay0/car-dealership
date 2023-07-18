@@ -8,16 +8,19 @@
         rel="stylesheet" 
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
         crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
     </head>
     <body>
-        <h1>Add Car</h1>
-        <form action="/cars" method="post">
-            <label for="make">Make: </label>
-            <input id="make" name="make" type="text">
-            <label for="model">Model: </label>
-            <input id="model" name="model" type="text">
-            <label for="year">Year: </label>
-            <input id="year" name="year" type="text">
-            <button type="submit">Submit</button>
-        </form>
+        <h1>Add a Car to the List</h1>
+        <div id="form-div">
+            <form action="/cars" method="post">
+                <label for="make">Make:  </label><br>
+                <input id="make" name="make" type="text"><br>
+                <label for="model">Model: </label><br>
+                <input id="model" name="model" type="text"><br>
+                <label for="year">Year:   </label><br>
+                <input id="year" name="year" type="text"><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </body>
